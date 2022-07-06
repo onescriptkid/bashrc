@@ -232,7 +232,7 @@ complete -F _complete_invoke -o default invoke inv
 # vim: set ft=sh :
 
 ##### DATABASE #####
-export DB_URL="postgresql://user:password@<url>:<port/postgresql?sslmode=<...>&sslrootcert=<...>"
+export DB_URL='postgresql://user:password@<url>:<port/postgresql' #?sslmode=verify-ca&sslrootcert=<...>&sslcert=<...>&sslkey=<...>"
 
 ##### ROS #####
 alias roslaunch='DISPLAY=:0 roslaunch'
