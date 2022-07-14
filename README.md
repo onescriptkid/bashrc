@@ -1,6 +1,8 @@
-# bashrc
+[![Python](https://img.shields.io/badge/bash-5.0.17(1)-blue)](https://pypi.python.org/pypi/azure-devops)
+
+# [~/.bashrc](./.bashrc)
 My `~/.bashrc` configurations. It includes npm autocompletion, python virtualenv wrappers, git aliases, and more!
-# Useful tools
+# 🚀 Useful tools
 
 Installation steps for tools I download in almost every dev environment
 
@@ -143,3 +145,4 @@ mv ./kind /ur/localbin/kind
 ```bash
 sudo apt install wait-for-it
 ```
+## [~/.psqlrc](./.psqlrc)

@@ -239,7 +239,8 @@ alias roslaunch='DISPLAY=:0 roslaunch'
 source /opt/ros/melodic/setup.bash
 
 ##### GIT #####
-alias gap='git add -u && git commit --amend --no-edit && git push origin $(git rev-parse --abbrev-ref HEAD) --force'
+git config --global alias.lazyf '! git add -u && git commit --amend --no-edit && git push origin $(git rev-parse --abbrev-ref HEAD) --force'
+git config --global alias.lazy '! git add -u && git commit -m "commit" && git push origin $(git rev-parse --abbrev-ref HEAD)'
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 ##### GIT SUBMODULES #####
