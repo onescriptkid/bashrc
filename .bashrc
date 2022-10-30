@@ -247,12 +247,20 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 alias subfix='git submodule deinit --all -f && git submodule init && git submodule sync --recursive && git submodule update --init --recursive'
 
 ##### GO #####
-export PATH=$PATH:/usr/local/go/bin/go
-export PATH=$PATH:/home/$USER/go/bin
+if [[ ! "$PATH" =~ "/usr/local/go/bin/go"([:]|$)  ]]; then
+  export PATH=$PATH:/usr/local/go/bin/go
+fi
+
+if [[ ! "$PATH" =~ "/home/$USER/go/bin"([:]|$)  ]]; then
+  export PATH=$PATH:/home/$USER/go/bin
+fi
+
 export GO111MODULE=on
 
 ##### fire #####
-export PATH=$PATH:~/fire
+if [[ ! "$PATH" =~ "/home/$USER/fire"([:]|$)  ]]; then
+  export PATH=$PATH:/home/$USER/fire
+fi
 
 ##### code #####
 alias code="code --disable-gpu"
