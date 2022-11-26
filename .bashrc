@@ -247,8 +247,8 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 alias subfix='git submodule deinit --all -f && git submodule init && git submodule sync --recursive && git submodule update --init --recursive'
 
 ##### GO #####
-if [[ ! "$PATH" =~ "/usr/local/go/bin/go"([:]|$)  ]]; then
-  export PATH=$PATH:/usr/local/go/bin/go
+if [[ ! "$PATH" =~ "/usr/local/go/bin"([:]|$)  ]]; then
+  export PATH=$PATH:/usr/local/go/bin
 fi
 
 if [[ ! "$PATH" =~ "/home/$USER/go/bin"([:]|$)  ]]; then
