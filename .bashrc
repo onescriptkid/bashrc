@@ -192,9 +192,12 @@ fi
 
 ##### Python VirtualenvWrappers #####
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+export WORKON_HOME=~/.virtualenvs
+. /home/$USER/.local/bin/virtualenvwrapper.sh
+# Alternatively,
+# export VIRTUALENVWRAPPER_VIRTUALENV=/home/$USER/.local/bin/virtualenv
 export CLOUDSDK_PYTHON=/usr/bin/python2
-export WORKON_HOME=~/Envs
-source /home/$USER/.local/bin/virtualenvwrapper.sh
 
 ##### Python inv #####
 

@@ -11,10 +11,22 @@ Installation steps for tools I download in almost every dev environment
 sudo apt install python3-virtualenv
 ```
 ## [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+
+Assumes python3 and pip3 installed.
+
 ```bash
-export WORKON_HOME=~/Envs
+pip3 install --user virtualenvwrapper
+```
+```bash
+# Run in shell after installer OR Add this to ~/.bashrc
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
 mkdir -p $WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
+. /home/$USER/.local/bin/virtualenvwrapper.sh
+# Alternatively,
+# export VIRTUALENVWRAPPER_VIRTUALENV=/home/$USER/.local/bin/virtualenv
+export CLOUDSDK_PYTHON=/usr/bin/python2
 ```
 
 ## [jq](https://stedolan.github.io/jq/)
