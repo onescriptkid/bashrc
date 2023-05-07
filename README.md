@@ -6,6 +6,33 @@ My `~/.bashrc` configurations. It includes npm autocompletion, python virtualenv
 
 Installation steps for tools I download in almost every dev environment
 
+## [pyenv](https://github.com/pyenv/pyenv) and [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+
+Great for managing multiple versions of python on the same machine
+
+```bash
+curl https://pyenv.run | bash
+```
+
+Update `~/.bashrc` with pyenv and pyenv-virtualenv references
+
+```bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+```
+
+```bash
+eval "$(pyenv virtualenv-init -)"
+```
+
+```bash
+pyenv install 3.11
+pyenv virtualenv 3.10 my-virtualenv-3.10
+pyenv version
+pyenv activate my-virtualenv-3.10
+```
+
 ## [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
 ```bash
 sudo apt install python3-virtualenv
