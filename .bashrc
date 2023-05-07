@@ -250,6 +250,14 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 alias subfix='git submodule deinit --all -f && git submodule init && git submodule sync --recursive && git submodule update --init --recursive'
 
 ##### GO #####
+
+#####   GO Alternaive cmd for checking if binary exists #####
+# if ! command -v go > /dev/null; then
+#  export PATH=$PATH:/usr/local/go/bin
+#  export PATH=$PATH:/home/$USER/go/bin
+# fi
+#####   GO Alternaive cmd for checking if binary exists #####
+
 if [[ ! "$PATH" =~ "/usr/local/go/bin"([:]|$)  ]]; then
   export PATH=$PATH:/usr/local/go/bin
 fi
