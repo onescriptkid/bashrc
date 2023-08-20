@@ -188,7 +188,9 @@ fi
 ###-end-npm-completion-###
 
 ##### NPX #####
-~/.complete_npx
+if [ -f "~/.complete_npx.sh" ]; then
+  . ~/.complete_npx.sh
+fi
 
 ##### Python VirtualenvWrappers #####
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
