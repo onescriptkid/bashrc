@@ -247,6 +247,7 @@ source /opt/ros/melodic/setup.bash
 git config --global alias.lazyf '! git add -u && git commit --amend --no-edit && git push origin $(git rev-parse --abbrev-ref HEAD) --force'
 git config --global alias.lazy '! git add -u && git commit -m "commit" && git push origin $(git rev-parse --abbrev-ref HEAD)'
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+git config --global alias.delete-local-branches '! git branch | grep -v "master" | xargs git branch -D'
 
 ##### GIT SUBMODULES #####
 alias subfix='git submodule deinit --all -f && git submodule init && git submodule sync --recursive && git submodule update --init --recursive'
