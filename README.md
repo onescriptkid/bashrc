@@ -187,4 +187,4 @@ sudo apt install wait-for-it
 ## [~/.psqlrc](./.psqlrc)
 
 ## [~/.tmux.conf](./.tmux.conf)
-
+Go to tmux-sensible
