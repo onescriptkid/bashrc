@@ -187,4 +187,9 @@ sudo apt install wait-for-it
 ## [~/.psqlrc](./.psqlrc)
 
 ## [~/.tmux.conf](./.tmux.conf)
-Go to tmux-sensible
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+# prefix + I to install
+tmux select-layout tiled
+```
