@@ -186,6 +186,18 @@ sudo apt install wait-for-it
 ```
 ## [~/.psqlrc](./.psqlrc)
 
+## [zellij](https://zellij.dev/)
+```
+cd ~/Downloads
+tar -xvzf zellij-x86_64-unknown-linux-musl.tar.gz
+sudo cp zellij /usr/bin/zellij  
+```
+
+## [flameshot](https://flameshot.org/#download)
+```
+sudo apt update && sudo apt install flameshot
+```
+
 ## [~/.tmux.conf](./.tmux.conf)
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
